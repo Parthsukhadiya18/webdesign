@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>hello</h2>
+    <h3>hello</h3>
+    <button type="button" id="hide">Hide</button>
+    <button type="button" id="show">Show</button>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore debitis deleniti incidunt esse, rem veniam ab veritatis nobis! Unde sint quasi obcaecati consectetur, sunt ipsa qui ratione. Esse, facere assumenda. Mollitia itaque reiciendis rerum laudantium officia voluptatum enim odit culpa asperiores, necessitatibus optio dignissimos aut, veritatis nostrum facere? Officiis odit soluta quae sint odio repellat necessitatibus corporis optio maiores, quaerat exercitationem voluptatem aut velit nostrum debitis perspiciatis, voluptates nobis dolorem, iure ducimus qui ut magnam blanditiis architecto. Ipsam vero quidem quisquam odio at, quos libero in omnis? Ad, totam id. Iure nostrum qui, voluptate eum quasi sequi libero repudiandae similique?</p>
+
+
+<script>
+    //    let heading = document.querySelector("h2");
+    let body = document.querySelector("body");
+    let para= document.querySelector("p");
+    //     // document.addEventListener("event", myFunction);
+    //     heading.addEventListener("click", Function(){
+    //        body.style.backgroundColor = "red";
+    //     });
+
+        document.querySelector("h2").addEventListener("click", function(){
+            body.style.backgroundColor = "Red";
+        });
+        document.querySelector("h3").addEventListener("click", function(){
+            body.style.backgroundColor = "transparent";
+        });
+        document.querySelector("#hide").addEventListener("click", function(){
+           para.style.display = "none";
+        });
+        document.querySelector("#show").addEventListener("click", function(){
+            para.style.display = "block";
+        });
+    </script>
+</body>
+</html>

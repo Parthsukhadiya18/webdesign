@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    nav {
+         display:flex; 
+         justify-content: space-between;
+         text-align: center;
+         background-color: aqua;
+         height: 50px;
+          
+        }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+        li{
+        list-style: none;
+        font-size: 20px;
+        }
+        .add{
+            display: none; 
+        }
+        .close-btn{
+            display: none;
+        }
+       
+
+    @media (max-width:576px){
+        .menu{
+            width: 60px;
+            height: 100vh;
+            top: 50px;
+            left: -60px;
+           
+            background-color: red;
+            flex-direction:column;
+            transition: 1s;
+            position: fixed;
+        }
+        .nav-up{
+            left:0px;
+        }
+        .add{
+            display: block; 
+        }
+        .close-btn{
+            display: block;
+        }
+    }
+</style> 
+   
+    
+</head>
+    <header>
+        <nav>
+            <h1>Logo</h1>
+            <button type="button" class="add" ><i class="fa fa-bars"></i></button>
+            <ul class="menu">
+                <li class="close-btn">&times;</li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        let btn = document.querySelector("button");
+        let menu = document.querySelector(".menu")
+        let closeBtn = document.querySelector(".close-btn")
+
+        btn.addEventListener("click", () =>{
+           //  menu.classList.toggle("nav-up");
+           menu.classList.add("nav-up");
+        })
+        closeBtn.addEventListener("click", () =>{
+           menu.classList.remove("nav-up");
+        })
+    </script>
+</body>
+</html>
