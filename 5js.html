@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">HELLO</p>
+    <p id="demo1">HELLO1</p>
+    <p id="demo2">HELLO2</p>
+    <script>
+        function cal(){
+            return "parth";
+        }
+        function user(name){
+            return `This is  ${name}`;
+        }
+    
+       
+        document.getElementById("demo").innerHTML = cal();
+        document.getElementById("demo1").innerHTML = cal();
+        document.getElementById("demo2").innerHTML = user("parth");
+        //   name(parth);
+       document.writeln(user("parth"));
+       console.log(user("parth"));
+
+
+       //    object
+       let person = {
+              name:"Parth",
+              last:"Patel",
+              age:25,
+              city:"Surat",
+        }
+        let person1 = {
+              name:"Parth",
+              last:"Patel",
+              age:25,
+              city:"Surat",
+        }
+        let person2 = {
+              name:"Parth",
+              last:"Patel",
+              age:25,
+              city:"Surat",
+        }
+        let person3 = {
+              name:"Parth",
+              last:"Patel",
+              age:25,
+              city:"Surat",
+        }
+        console.log(person);
+        console.log(person1);
+        console.log(person2);
+        console.log(person3);
+
+
+
+        let my = {
+              name:"Parth",
+              last:"Patel",
+              age:1998,
+              city:"Surat",
+              address:{
+                number:18,
+                area:"varachha",
+                landmark:"chok",
+              },
+              Cname:function (){
+                   return `my name is ${my.name} and my age ${my.age}`;
+              },
+              cage:function (){
+                   return 2022 - my.age;
+              },
+        }
+          console.log(my);
+          console.log(my.address);
+          console.log(my.address.area);
+          console.log(my.cage());
+          console.log(my.Cname());
+
+
+    </script>
+</body>
+</html>

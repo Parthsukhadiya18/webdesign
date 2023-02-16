@@ -1,0 +1,108 @@
+<!-- /*
+ 
+ 
+ condition statement
+
+1)if
+==if
+if(){
+  //  block of code
+
+}
+==if else
+if(){
+  //  block of code
+    
+}else{
+  //  block of code
+
+}
+
+==if else if
+if(){
+  //  block of code
+    
+}else if(){
+  //  block of code
+
+}else{
+  //  block of code
+
+}
+2)switch  
+
+switch(){
+    case:1
+}*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let br = "<br>";
+
+        let num1 = 5;
+        let num2 = 10;
+
+        if (num1 > num2) {
+            document.write(num1 + "is max");
+        }
+        else {
+            document.write(num2 + "is max");
+        }
+
+        let num3 = 50;
+        let num4 = 20;
+        let num5 = 30;
+        if (num3 > num4) {
+            document.write(num3 + "is max" + br);
+        }
+        else if (num4 > num5) {
+            document.write(num4 + "is max" + br);
+        }
+        else {
+            document.write(num5 + "is max" + br);
+        }
+
+        let month = 6;
+        switch (month) {
+            case 1:
+                document.write("Jan" + br);
+                break;
+            case 2:
+                document.write("Feb" + br);
+                break;
+            case 3:
+                document.write("March" + br);
+                break;
+            case 4:
+                document.write("April" + br);
+                break; 
+                
+                case 6:
+                document.write("May" + br);
+                break;
+
+
+            default:
+                document.write("select correct option" + br);
+                break;
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
