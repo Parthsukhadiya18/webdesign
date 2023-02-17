@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email</title>
+   
+</head>
+
+<body>
+            <form method="post" action="" name="form1">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="text" name="email" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" id="email" placeholder="Enter Email" /><br />
+                             
+                    <br><br>
+                    <input type="submit" value="Submit" onclick="sub()"/>
+            </form>
+    <script>
+        function sub(){
+            // let email=document.querySelector("#email").value;
+            let email=document.form1.email.value;
+
+        if(email==""){
+            alert("enter email");
+        return false;
+
+        }        
+        }    
+    </script>
+</body>
+
+</html>
