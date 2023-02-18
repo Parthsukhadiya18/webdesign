@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- show and hide password -->    
+    <input type="password" placeholder="enter password" />
+    
+    <button type="button" id="toggle">Toggle</button>
+    
+    <script>
+      $("document").ready(function () {
+       
+        $("#toggle").click(function (){
+            //console.log("hi");
+            if($("input").attr("type") === "password"){
+            // console.log("yes");
+            $("input").attr("type","text");
+            $("#toggle").text("Hide");
+
+            }else{
+            $("input").attr("type","password");
+            $("#toggle").text("Show");
+
+            }
+        });
+
+        
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- show and hide password -->
+   
+<p>PLorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid officiis eius, cum vitae ad at rerum perferendis fugiat? Ab odio earum, cum aut quod aperiam maxime ipsam, necessitatibus illum cupiditate dolorem? Alias sed reiciendis libero molestiae. Doloremque soluta adipisci libero corporis dolore est veritatis architecto culpa rem quis placeat modi necessitatibus autem consequuntur quia exercitationem, quas quaerat odit sunt? Sunt voluptatem delectus unde, nihil voluptate sint iste ab illum atque qui hic nam distinctio, sequi ad nesciunt aliquam. Ipsum reiciendis tempore necessitatibus molestias dicta architecto quae magnam! Inventore animi aut ad iusto soluta pariatur, quam adipisci libero mollitia doloribus consequuntur?</p>
+<h1 id="sup">slideUp</h1>
+<h1 id="sdown">slideDown</h1>
+<h1 id="sup-down">slideToggle</h1>
+<h6 class="tara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, vero quas ratione aliquid quibusdam nam ducimus, quod reiciendis possimus nesciunt error nostrum impedit libero necessitatibus quis voluptatem, amet esse. Deleniti, voluptatem. Nemo molestiae quas et magni, inventore veniam nulla! Quos quam aperiam perspiciatis accusantium eveniet officia magnam consectetur sit voluptatem?</h6>
+
+
+<h5>parth</h5>
+    
+    <script>
+ //    slideup slidedown slidetoggle
+
+     $("document").ready(function(){
+         
+       
+          $("#sup").click(function(){
+             $(".tara").slideUp();
+             
+           });
+           $("#sdown").click(function(){
+           $(".tara").slideDown();
+        //    console.log("hello");
+           });
+        $("#sup-down").click(function(){
+              $(".tara").slideToggle();
+           });
+        })
+    </script>
+</body>
+</html>
