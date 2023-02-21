@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+    <style>
+#div1{
+    height: 100px;
+    width: auto;
+    background-color: yellow;
+    border: 2px solid black;
+}
+    </style>
+</head>
+<body>
+      <h1>Remove Empty</h1>
+      <button id="remove" type="button">Remove</button>
+      <button id="empty" type="button">Empty</button>
+      <div id="div1">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quibusdam.</p>      
+      </div>
+      <script>
+        $(document).ready(function(){
+           $("#remove").click(function(){
+            // document.writeln("hello");
+            $("#div1").remove();
+           })
+           $("#empty").click(function(){
+            // document.writeln("hello");
+            $("#div1").empty();
+           })
+        })
+      </script>
+</body>
+</html>
